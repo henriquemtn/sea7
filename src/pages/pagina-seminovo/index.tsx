@@ -7,6 +7,7 @@ import {
 
 import axios from 'axios';
 import Formulario from '../../components/Formulario';
+import Footer from '../../components/Home/Footer';
 
 interface Barco {
     id: number;
@@ -151,8 +152,8 @@ const PaginaSeminovo = () => {
 
     return (
         <>
-            <div className='flex justify-center mt-[120px] py-20 px-4 bg-white'>
-                <div className='flex flex-col md:w-[1000px] gap-10 md:flex-row sm:gap-10'>
+            <div className='flex justify-center mt-[120px] md:py-10 md:px-4 '>
+                <div className='flex flex-col md:w-[1000px] w-full gap-10 md:flex-row sm:gap-10 py-10 shadow bg-white md:p-12 md:rounded-xl px-4'>
 
                     {/* Parte esquerda (imagens) */}
                     <div className='flex flex-col items-center'>
@@ -225,7 +226,8 @@ const PaginaSeminovo = () => {
                     </div>
                 </div>
             </div>
-            <Formulario bg='f4' texto="Entre em contato" descricao="Você pode usar o número (48) 9 8461-1646 ou se preferir mande um email:" context={product.nomeProduto} />
+            <Formulario bg='white' texto="Entre em contato" descricao="Você pode usar o número (48) 9 8461-1646 ou se preferir mande um email:" context={product.nomeProduto} />
+            <Footer />
         </>
     );
 };
