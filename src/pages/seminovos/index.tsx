@@ -67,7 +67,7 @@ export const Seminovos = () => {
                                         <h1 className='text-[15px] font-bold'>{barco.nomeProduto}</h1>
                                         <div className="w-1/3 flex justify-end">
                                             <div className='bg-s7 px-2 w-[55px] h-[25px] rounded-[5px] text-white relative flex items-center'>
-                                                <h1 className='text-[13px]'>{barco.quantidadeProduto} pés</h1>
+                                                <h1 className='text-[12px]'>{barco.quantidadeProduto} pés</h1>
                                             </div>
                                         </div>
                                     </div>
