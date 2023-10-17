@@ -211,8 +211,8 @@ const PaginaSeminovo = () => {
                         <div className='bg-gray-300 h-[1px] w-full mb-5' />
                         <div className='flex justify-between'>
                             <p>R$ {product.precoProduto.toLocaleString('pt-BR', { minimumFractionDigits: 2 })}</p>
-                            <div className='bg-s7 w-[55px] h-[25px] rounded-[5px] text-white flex items-center'>
-                                <h1 className='ml-2 text-[14px]'>{product.quantidadeProduto} pés</h1>
+                            <div className='bg-s7 px-2 w-[65px] h-[25px] rounded-[5px] text-white relative flex justify-center items-center'>
+                                <h1 className='text-[12px]'>{product.quantidadeProduto} pés</h1>
                             </div>
                         </div>
                         <p className='mt-5 text-justify'>
