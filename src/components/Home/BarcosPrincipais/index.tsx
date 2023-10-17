@@ -2,7 +2,7 @@
 import { useState, useEffect } from "react";
 import { useNavigate } from 'react-router-dom';
 import axios from "axios";
-import Button from "../../Button";
+import { HiOutlineArrowSmRight } from "react-icons/hi"
 import { BeatLoader } from "react-spinners";
 import FadeInOnScroll from "../../../scripts/fadeInOnScroll";
 
@@ -76,9 +76,10 @@ export default function BarcosPrincipais() {
                                 <div className='h-[1px] w-full bg-gray-300'></div>
                                 <div className='flex justify-between mt-4 items-center'>
                                     <h1>R$ {barco.precoProduto.toLocaleString('pt-BR', { minimumFractionDigits: 2 })}</h1>
-                                    <div onClick={() => navigate(`/seminovos/${barco.id}`)}>
-                                        <Button text="Ver mais" fontType="regular" fontSize="16" px="4" py="1" />
-                                    </div>
+                                    <a onClick={() => navigate(`/seminovos/${barco.id}`)} className="cursor-pointer flex items-center gap-1 text-base font-medium text-[#242424]">
+                                            Ver mais 
+                                            <HiOutlineArrowSmRight className="mt-[2px]" />
+                                    </a>
                                 </div>
                             </div>
                         ))}

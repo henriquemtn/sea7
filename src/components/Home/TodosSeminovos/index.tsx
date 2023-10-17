@@ -23,7 +23,9 @@ export default function TodosSeminovos({ text, description, buttonText }: Custom
                         <div className="flex flex-col items-center justify-center h-full relative z-20">
                             <h1 className="font-bold text-2xl md:text-6xl text-white mb-2 md:mb-4 p-2">{text}</h1>
                             <p className="text-[13px] md:text-xl text-center text-white mb-4">{description}</p>
-                            <Button text={buttonText} fontType="medium" fontSize="20px" px="12" py="2" />
+                            <a href="/seminovos">
+                                <Button text={buttonText} fontType="medium" fontSize="20px" px="12" py="2" />
+                            </a>
                         </div>
                     </FadeInOnScroll>
                 </div>

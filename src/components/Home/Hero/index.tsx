@@ -24,9 +24,9 @@ export default function Hero({ text, description, buttonText }: CustomProps) {
                     <div className="flex flex-col mt-40 md:mt-20 md:items-start items-center justify-center md:justify-start md:ml-20 md:z-10">
                         <h1 className="md:max-w-[470px] text-center md:text-start font-bold text-5xl md:text-6xl text-white mb-4">{text}</h1>
                         <p className="text-xl text-white mb-4">{description}</p>
-                        <div>
+                        <a href="/seminovos">
                             <Button text={buttonText} fontType="regular" fontSize="16" px="12" py="2" />
-                        </div>
+                        </a>
                     </div>
                 </FadeInOnScroll>
                 <div className="w-full ss:h-[220px] flex justify-center absolute rounded-b-lg px-6 lg:px-12 bottom-[-12em] md:bottom-[-12em] ss:bottom-[-2em]">
@@ -50,13 +50,9 @@ export default function Hero({ text, description, buttonText }: CustomProps) {
                                     description="Maximizando a Segurança na Negociação, Evitando Leilões Desvantajosos, Garantindo Transparência e Qualidade na Venda"
                                     icon={<FaEnvelopeOpenText />}
                                 />
-                                <Button
-                                    text="Saiba mais"
-                                    fontType="medium"
-                                    fontSize="20px"
-                                    px="12"
-                                    py="2"
-                                />
+                                <a href="/venda-seu-barco">
+                                    <Button text="Venda seu barco" fontType="regular" fontSize="16" px="12" py="2" />
+                                </a>
                             </div>
                         </FadeInOnScroll>
                     </div>

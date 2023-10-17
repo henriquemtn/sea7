@@ -4,6 +4,8 @@ import axios from 'axios';
 import Button from '../../components/Button';
 import Footer from '../../components/Home/Footer';
 import { BeatLoader } from "react-spinners";
+import FadeInOnScroll from '../../scripts/fadeInOnScroll';
+import { HiOutlineArrowSmRight } from 'react-icons/hi';
 
 //Criar interface Barco passando as propriedades
 interface Barco {
@@ -46,42 +48,45 @@ export const Seminovos = () => {
                         <BeatLoader color="#36d7b7" />
                     </div>
                 ) : (
-                    <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4'>
-                        {barcos.map((barco) => (
-                            <div
-                                className='w-full h-[500px] p-4 rounded-[10px] flex flex-col'
-                                key={barco.id}
-                            >
+                    <FadeInOnScroll>
+                        <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4'>
+                            {barcos.map((barco) => (
                                 <div
-                                    className='h-[300px] rounded-[10px] hover:bg-gray-300 duration-200'
-                                    style={{
-                                        backgroundImage: `url(data:${barco.imagemPrincipal[0].type};base64,${barco.imagemPrincipal[0].base64Image})`,
-                                        backgroundSize: 'cover',
-                                        backgroundPosition: 'center',
-                                    }}
-                                ></div>
+                                    className='w-full h-[500px] p-4 rounded-[10px] flex flex-col'
+                                    key={barco.id}
+                                >
+                                    <div
+                                        className='h-[300px] rounded-[10px] hover:bg-gray-300 duration-200'
+                                        style={{
+                                            backgroundImage: `url(data:${barco.imagemPrincipal[0].type};base64,${barco.imagemPrincipal[0].base64Image})`,
+                                            backgroundSize: 'cover',
+                                            backgroundPosition: 'center',
+                                        }}
+                                    ></div>
 
-                                <div className='flex justify-between my-2'>
-                                    <h1 className='text-[15px] font-bold'>{barco.nomeProduto}</h1>
-                                    <div className="w-1/3 flex justify-end">
-                                        <div className='bg-s7 px-2 w-[55px] h-[25px] rounded-[5px] text-white relative flex items-center'>
-                                            <h1 className='text-[13px]'>{barco.quantidadeProduto} pés</h1>
+                                    <div className='flex justify-between my-2'>
+                                        <h1 className='text-[15px] font-bold'>{barco.nomeProduto}</h1>
+                                        <div className="w-1/3 flex justify-end">
+                                            <div className='bg-s7 px-2 w-[55px] h-[25px] rounded-[5px] text-white relative flex items-center'>
+                                                <h1 className='text-[13px]'>{barco.quantidadeProduto} pés</h1>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div className='mb-4'>
-                                    <p className='text-[14px]'>{barco.descricaoCurta}</p>
-                                </div>
-                                <div className='h-[1px] w-full bg-gray-300'></div>
-                                <div className='flex justify-between mt-4 items-center'>
-                                    <h1>R$ {barco.precoProduto.toLocaleString('pt-BR', { minimumFractionDigits: 2 })}</h1>
-                                    <div onClick={() => navigate(`/seminovos/${barco.id}`)}>
-                                        <Button text="Ver mais" fontType="regular" fontSize="16" px="4" py="1" />
+                                    <div className='mb-4'>
+                                        <p className='text-[14px]'>{barco.descricaoCurta}</p>
+                                    </div>
+                                    <div className='h-[1px] w-full bg-gray-300'></div>
+                                    <div className='flex justify-between mt-4 items-center'>
+                                        <h1>R$ {barco.precoProduto.toLocaleString('pt-BR', { minimumFractionDigits: 2 })}</h1>
+                                        <a onClick={() => navigate(`/seminovos/${barco.id}`)} className="cursor-pointer flex items-center gap-1 text-base font-medium text-[#242424]">
+                                            Ver mais 
+                                            <HiOutlineArrowSmRight className="mt-[2px]" />
+                                    </a>
                                     </div>
                                 </div>
-                            </div>
-                        ))}
-                    </div>
+                            ))}
+                        </div>
+                    </FadeInOnScroll>
                 )
                 }
             </section>
