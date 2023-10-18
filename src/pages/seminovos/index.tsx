@@ -64,7 +64,7 @@ export const Seminovos = () => {
                                     ></div>
 
                                     <div className='flex justify-between my-2'>
-                                        <h1 className='text-[15px] font-bold'>{barco.nomeProduto}</h1>
+                                        <h1 className='text-[15px] font-bold'>{barco.nomeProduto.split("-").join(" ")}</h1>
                                         <div className="w-1/3 flex justify-end">
                                             <div className='bg-s7 px-2 w-[65px] h-[25px] rounded-[5px] text-white relative flex justify-center items-center'>
                                                 <h1 className='text-[12px]'>{barco.quantidadeProduto} pés</h1>
@@ -77,7 +77,7 @@ export const Seminovos = () => {
                                     <div className='h-[1px] w-full bg-gray-300'></div>
                                     <div className='flex justify-between mt-4 items-center'>
                                         <h1>R$ {barco.precoProduto.toLocaleString('pt-BR', { minimumFractionDigits: 2 })}</h1>
-                                        <a onClick={() => navigate(`/seminovos/${barco.id}`)} className="cursor-pointer flex items-center gap-1 text-base font-medium text-[#242424]">
+                                        <a onClick={() => navigate(`/seminovos/${barco.nomeProduto}`)} className="cursor-pointer flex items-center gap-1 text-base font-medium text-[#242424]">
                                             Ver mais
                                             <HiOutlineArrowSmRight className="mt-[2px]" />
                                         </a>

@@ -131,7 +131,7 @@ const PaginaSeminovo = () => {
 
     const fetchProduct = async () => {
         try {
-            const response = await axios.get(`https://www.sea7api.com.br/buscarPorId/${productId}`);
+            const response = await axios.get(`https://www.sea7api.com.br/buscarPorNome/${productId}`);
             setProduct(response.data);
         } catch (error) {
             console.error('Erro ao buscar produto:', error);
@@ -208,7 +208,7 @@ const PaginaSeminovo = () => {
 
                     {/* Parte direita (detalhes do produto) */}
                     <div className='sm:w-[500px] mb-10 bg-white p-8 rounded-md'>
-                        <h1 className='text-2xl font-bold mb-2'>{product.nomeProduto}</h1>
+                        <h1 className='text-2xl font-bold mb-2'>{product.nomeProduto.split("-").join(" ")}</h1>
                         <p className='mb-5'>{product.descricaoCurta}</p>
                         <div className='bg-gray-300 h-[1px] w-full mb-5' />
                         <div className='flex justify-between'>
