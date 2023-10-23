@@ -7,7 +7,7 @@ export default function App() {
   return (
     <>
       <div className="flex bg-f4 w-full flex-col items-center justify-between md:px-24">
-        <Hero text="Relax, dream and steer" description="Book your experience on a yacht" buttonText="Explore" />
+        <Hero text="Brokerage, Survey e Skipper" description="Venda, Vistoria e Transportes de embarcações (via mar)." buttonText="Entre em contato" />
       </div>
       <div className="flex justify-center bg-f4 w-full items-center md:px-24">
         <BarcosPrincipais />

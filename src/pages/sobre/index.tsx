@@ -1,4 +1,4 @@
-import Imagem from "../../assets/slider.png"
+import Imagem from "../../assets/sobre.png"
 import Footer from "../../components/Home/Footer"
 import Modal from "../../components/Modal"
 

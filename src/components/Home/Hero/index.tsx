@@ -18,13 +18,13 @@ export default function Hero({ text, description, buttonText }: CustomProps) {
     };
 
     return (
-        <div className="flex flex-col justify-center items-center w-full h-[881px] relative mt-[100px] lg:mb-0" >
+        <div className="flex flex-col justify-center items-center w-full h-[881px] relative md:mt-[100px] lg:mb-0" >
             <div className="bg-gray-500 w-full h-[726px] md:rounded-[25px] lg:mx-[150px] flex-col justify-center" style={containerStyle}>
                 <FadeInOnScroll>
-                    <div className="flex flex-col mt-40 md:mt-20 md:items-start items-center justify-center md:justify-start md:ml-20 md:z-10">
-                        <h1 className="md:max-w-[470px] text-center md:text-start font-bold text-5xl md:text-6xl text-white mb-4">{text}</h1>
-                        <p className="text-xl text-white mb-4">{description}</p>
-                        <a href="/seminovos">
+                    <div className="flex flex-col mt-40 md:mt-20 md:items-start mx-4 md:mx-0 items-center justify-center md:justify-start md:ml-20 md:z-10">
+                        <h1 className="md:max-w-[470px] text-center md:text-start font-bold text-4xl md:text-5xl text-white mb-4">{text}</h1>
+                        <p className="text-xl text-center md:text-start text-white mb-4">{description}</p>
+                        <a href="/contato">
                             <Button text={buttonText} fontType="regular" fontSize="16" px="12" py="2" />
                         </a>
                     </div>

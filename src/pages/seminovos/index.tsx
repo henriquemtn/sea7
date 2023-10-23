@@ -63,7 +63,7 @@ export const Seminovos = () => {
                                         }}
                                     ></div>
 
-                                    <div className='flex justify-between my-2'>
+                                    <div className='flex justify-between my-2  min-h-[40px]'>
                                         <h1 className='text-[15px] font-bold'>{barco.nomeProduto.split("-").join(" ")}</h1>
                                         <div className="w-1/3 flex justify-end">
                                             <div className='bg-s7 px-2 w-[65px] h-[25px] rounded-[5px] text-white relative flex justify-center items-center'>
@@ -71,7 +71,7 @@ export const Seminovos = () => {
                                             </div>
                                         </div>
                                     </div>
-                                    <div className='mb-4'>
+                                    <div className='mb-4 min-h-[40px]'>
                                         <p className='text-[14px]'>{barco.descricaoCurta}</p>
                                     </div>
                                     <div className='h-[1px] w-full bg-gray-300'></div>
