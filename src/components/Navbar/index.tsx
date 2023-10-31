@@ -66,6 +66,10 @@ export default function NavBar() {
                                 <li className="text-[#454545] hover:text-[#159688]">
                                     <a href="/sobre">Sobre</a>
                                 </li>
+                                
+                                <li className="text-[#454545] hover:text-[#159688]">
+                                    <a href="/survey">Survey</a>
+                                </li>
 
                                 <li className="text-[#454545] hover:text-[#159688]">
                                     <a href="/seminovos">Seminovos</a>
@@ -76,7 +80,7 @@ export default function NavBar() {
                                 </li>
 
                                 <li className="text-[#454545] hover:text-[#159688]">
-                                    <a href="/contato">Contato</a>
+                                    <a href="/entre-em-contato">Contato</a>
                                 </li>
                             </ul>
                         </div>

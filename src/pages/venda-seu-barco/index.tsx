@@ -14,7 +14,9 @@ export default function VendaSeuBarco() {
                 </>
             }
             buttonText="Ver mais" 
-            imagem={Imagem}/>
+            imagem={Imagem}
+            url="/entre-em-contato"
+            />
             <Footer />
         </>
     )

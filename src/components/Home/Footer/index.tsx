@@ -31,6 +31,9 @@ export default function Footer() {
                                     <li>
                                         <a href="/venda-seu-barco" className="text-gray-600 hover:text-gray-800">Saiba mais</a>
                                     </li>
+                                    <li>
+                                        <a href="/survey" className="text-gray-600 hover:text-gray-800">Survey</a>
+                                    </li>
 
                                 </nav>
                             </div>
@@ -38,16 +41,13 @@ export default function Footer() {
                                 <h2 className="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">REDES SOCIAIS</h2>
                                 <nav className="list-none mb-10">
                                     <li>
-                                        <a className="text-gray-600 hover:text-gray-800">Instagram</a>
+                                        <a href="https://www.instagram.com/sea7_group/" className="text-gray-600 hover:text-gray-800">Instagram</a>
                                     </li>
                                     <li>
-                                        <a className="text-gray-600 hover:text-gray-800">Facebook</a>
+                                        <a href="https://www.facebook.com/Sea7G/?locale=pt_BR" className="text-gray-600 hover:text-gray-800">Facebook</a>
                                     </li>
                                     <li>
-                                        <a className="text-gray-600 hover:text-gray-800">Twitter</a>
-                                    </li>
-                                    <li>
-                                        <a className="text-gray-600 hover:text-gray-800">Linkedin</a>
+                                        <a href="https://chat.whatsapp.com/EqShYB78els4d94GxF4bSa" className="text-gray-600 hover:text-gray-800">Canal de negócios</a>
                                     </li>
                                 </nav>
                             </div>
@@ -55,12 +55,12 @@ export default function Footer() {
                                 <h2 className="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">CONTATO</h2>
                                 <nav className="list-none mb-10">
                                     <li>
-                                        <a className="text-gray-600 hover:text-gray-800">Entre em contato</a>
+                                        <a href="/entre-em-contato" className="text-gray-600 hover:text-gray-800">Entre em contato</a>
                                     </li>
                                     <li>
-                                        <a className="text-gray-600 hover:text-gray-800">Whatsapp</a>
+                                        <a href="https://api.whatsapp.com/send?phone=5548984611646" className="text-gray-600 hover:text-gray-800">Whatsapp</a>
                                     </li>
-                                </nav>
+                                </nav>  
                             </div>
                         </div>
                     </div>
@@ -74,11 +74,6 @@ export default function Footer() {
                                 <a className="text-white" href="https://www.facebook.com/Sea7G/">
                                     <svg fill="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" className="w-5 h-5" viewBox="0 0 24 24">
                                         <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
-                                    </svg>
-                                </a>
-                                <a className="ml-3 text-white" href="https://www.twitter.com/">
-                                    <svg fill="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" className="w-5 h-5" viewBox="0 0 24 24">
-                                        <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
                                     </svg>
                                 </a>
                                 <a className="ml-3 text-white" href="https://www.instagram.com/sea7_group/">

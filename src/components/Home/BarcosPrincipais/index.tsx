@@ -43,10 +43,12 @@ export default function BarcosPrincipais() {
     return (
         <section className='p-10'>
             {isLoading ? (
-                <BeatLoader color="#36d7b7" />
+                <div className="flex justify-center items-center min-h-[550px]">
+                    <BeatLoader color="#36d7b7" />
+                </div>
             ) : (
                 <FadeInOnScroll>
-                    <div className='grid grid-cols-1 ss:grid-cols-2 ds:grid-cols-4 gap-4 mt-[12em] md:mt-44 ss:mt-0'>
+                    <div className='grid grid-cols-1 ss:grid-cols-2 ds:grid-cols-4 gap-4 mt-[12em] md:mt-44 ss:mt-0]'>
 
                         {barcos.map((barco) => (
                             <div

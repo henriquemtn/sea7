@@ -6,9 +6,10 @@ interface CustomProps {
     description: any,
     buttonText: string,
     imagem: string,
+    url: string,
 }
 
-export default function Modal({titulo, description, buttonText, imagem}: CustomProps) {
+export default function Modal({titulo, description, buttonText, imagem, url}: CustomProps) {
   return (
     <section className="bg-f4 text-gray-600 body-font mt-[8vh]">
                 <FadeInOnScroll>
@@ -19,7 +20,7 @@ export default function Modal({titulo, description, buttonText, imagem}: CustomP
                                {description}
                             </p>
                             <div className="flex w-full md:justify-start justify-center items-end mt-7">
-                                <Button text={buttonText} fontType="regular" fontSize="16" px="12" py="2" />
+                                <a href={url}><Button text={buttonText} fontType="regular" fontSize="16" px="12" py="2" /></a>
                             </div>
                         </div>
                         <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
